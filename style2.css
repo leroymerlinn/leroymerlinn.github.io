@@ -128,7 +128,7 @@ table {
   }
 .button {
     background: linear-gradient(#073763, #15d798);
-    border-radius: 1000px;
+    border-radius: 25px;
     border-style: none;
     padding: 20px 40px;
     color: #ffffff;
