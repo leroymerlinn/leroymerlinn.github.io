@@ -89,6 +89,29 @@ table {
     background-color: #7AFFDD;
 }
 
+/* Tooltips appearance */
+.iso2 {
+    color: black;
+}
+.lmsi2 {
+    color: black;
+}
+.gbd2 {
+    color: black;
+}
+.fol2 {
+    color: black;
+}
+.par2 {
+    color: black;
+}
+.iasir2 {
+    color: black;
+}
+.fh2 {
+    color: black;
+}
+
 /* Button appearance */
 .wrap {
     height: 100%;
