@@ -12,6 +12,9 @@
     transition: 0.4s;
 	box-sizing: border-box;
 }
+body {
+    background-color: #161616;
+}
 table {
 	filter:blur(0px);
 }
