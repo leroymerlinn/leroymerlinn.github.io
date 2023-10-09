@@ -6,6 +6,7 @@ let fh = document.getElementsByClassName("fh");
 let fol = document.getElementsByClassName("fol");
 let lmsi = document.getElementsByClassName("lmsi");
 let tabledata = document.getElementsByTagName("td");
+let theme = document.getElementById("css");
 function blurAllbutISO() {
     for (let i=0, max=iso.length; i < max; i++) {
         gbd[i].style.filter = "blur(5px)";
@@ -86,5 +87,12 @@ function blurAllbutPAR() {
 function unblurAll() {
     for (let w=0, max=tabledata.length; w < max; w++) {
         tabledata[w].style.filter = "blur(0px)";
+    }
+}
+function toggleMode() {
+    if (theme.getAttribute("href") == "style1.css") {
+        theme.href = "style2.css";
+    } else {
+        theme.href = "style1.css";
     }
 }
