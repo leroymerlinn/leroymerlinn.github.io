@@ -8,7 +8,7 @@
     src: url(segoeui.woff);
 }
 * {
-    font-family: segoeui;
+    font-family: sfui;
     transition: 0.4s;
 	box-sizing: border-box;
 }
