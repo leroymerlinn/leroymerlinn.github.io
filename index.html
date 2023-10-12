@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>Horario 2023/2024</title>
 		<link rel="shortcut icon" href="webIcon.ico">
 		<link rel="stylesheet" type="text/css" href="style1.css" id="css">
         <meta charset="UTF-8">
-		<!-- <script src="webscript.js" type="text/javascript"></script> -->
 		<script src="webscript2.js" type="text/javascript"></script>
-		<!-- <script src="webscript3.js" type="text/javascript"></script> -->
     </head>
-    <body onmouseleave="unblurAll()">
+    <body>
 		<div class="bodydiv" onmouseover="unblurAll()">
         	<h1 class="text-center">HORARIO 1ºASIR; CURSO 2023/24</h1>
 		</div>
@@ -24,19 +22,19 @@
 			</tr>
 			<tr>
 				<td class="horas">15:30</td>
-				<td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()" id="iso1">
+				<td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()">
 					<div>Implantación de sistemas operativos</div>
 				</td>
-				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()" id="gbd1">
+				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()">
 					<div>Gestión de bases de datos</div>
 				</td>
-				<td rowspan="2" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" id="lmsi3">
+				<td rowspan="2" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
 					<div>Lenguajes de marca y sistemas de gestión de información</div>
 				</td>
-				<td rowspan="3" class="iasir iasirpop" onmouseover="blurAllbutIASIR()" id="iasir1">
+				<td rowspan="3" class="iasir iasirpop" onmouseover="blurAllbutIASIR()">
 					<div>Inglés técnico para administración <br> de sistemas informáticos en red</div>
 				</td>
-				<td rowspan="3" class="fh fhpop" onmouseover="blurAllbutFH()" id="fh1">
+				<td rowspan="3" class="fh fhpop" onmouseover="blurAllbutFH()">
 					<div>Fundamentos de hardware</div>
 				</td>
 			</tr>
@@ -45,10 +43,10 @@
 			</tr>
 			<tr>
 				<td class="horas">17:20</td>
-				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" id="lmsi1">
+				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
 					<div>Lenguajes de marca y sistemas de gestión de información</div>
 				</td>
-                <td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" id="fol1">
+                <td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
                     <div>Formación y orientación laboral</div>
                 </td>
 			</tr>
@@ -58,31 +56,31 @@
 			</tr>
 			<tr>
 				<td class="horas">18:30</td>
-				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" id="lmsi2">
+				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
 					<div>Lenguajes de marca y sistemas de gestión de información</div>
 				</td>
-				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" id="fol2">
+				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
 					<div>Formación y orientación laboral</div>
 				</td>
-                <td rowspan="3" class="par parpop" onmouseover="blurAllbutPAR()" id="par1">
+                <td rowspan="3" class="par parpop" onmouseover="blurAllbutPAR()">
                     <div>Planificación y administración de redes</div>
                 </td>
-				<td rowspan="3" class="iso isopop" onmouseover="blurAllbutISO()" id="iso2">
+				<td rowspan="3" class="iso isopop" onmouseover="blurAllbutISO()">
 					<div>Implantación de sistemas operativos</div>
 				</td>
-				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" id="fol3">
+				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
 					<div>Formación y orientación laboral</div>
 				</td>
 			</tr>
 			<tr>
 				<td class="horas">19:25</td>
-				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()" id="gbd2">
+				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()">
 					<div>Gestión de bases de datos</div>
 				</td>
-                <td rowspan="2" class="par parpop" onmouseover="blurAllbutPAR()" id="par2">
+                <td rowspan="2" class="par parpop" onmouseover="blurAllbutPAR()">
                     <div>Planificación y administración de redes</div>
                 </td>
-                <td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()" id="iso3">
+                <td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()">
                     <div>Implantación de sistemas operativos</div>
                 </td>
 			</tr>
@@ -91,10 +89,64 @@
 			</tr>
 		</table>
 		<div class="bodydiv" onmouseover="unblurAll()">
+			<div id="clock" class="spaceBetweenTables">
+				<div id="clock" onload="clock()"></div>
+			</div>
+			<table>
+				<tr>
+					<th>MÓDULO</th>
+					<th>PROFESOR</th>
+				</tr>
+				<tr>
+					<td class="fh fhT">Fundamentos de hardware</td>
+					<td class="fh fhT">Israel Aguilar Sánchez</td>
+				</tr>
+				<tr>
+					<td class="fol folT">Formación y orientación laboral</td>
+					<td class="fol folT">Gloria González Marín</td>
+				</tr>
+				<tr>
+					<td class="gbd gbdT">Gestión de bases de datos</td>
+					<td class="gbd gbdT">Alberto Pérez Vela</td>
+				</tr>
+				<tr>
+					<td class="iasir iasirT">Inglés técnico para administración de sistemas informáticos en red</td>
+					<td class="iasir iasirT">Manuel Cano Hernández</td>
+				</tr>
+				<tr>
+					<td class="iso isoT">Implantación de sistemas operativos</td>
+					<td class="iso isoT">Israel Aguilar Sánchez</td>
+				</tr>
+				<tr>
+					<td class="lmsi lmsiT">Lenguajes de marca y sistemas de gestión de información</td>
+					<td class="lmsi lmsiT">Beatriz de Miguel Ramírez</td>
+				</tr>
+				<tr>
+					<td class="par parT">Planificación y administración de redes</td>
+					<td class="par parT">Jose Víctor Córdoba Martínez</td>
+				</tr>
+			</table>
 			<div class="wrap">
 				<button class="button" onclick="toggleMode()">Switch mode</button>
 			</div>
-        	<div class="copyright">&#169; Javier Rodríguez Parra</div>
+        	<p class="copyright">&#169; Javier Rodríguez Parra</p>
 		</div>
+			<div class="notVisible">
+				<table>
+					<tr>
+						<td class="fol">FOL</td>
+					</tr>
+					<tr>
+						<td class="iso">ISO</td>
+					</tr>
+					<tr>
+						<td class="lmsi">LMSI</td>
+						<td class="lmsi">LMSI</td>
+					</tr>
+					<tr>
+						<td class="gbd">GBD</td>
+					</tr>
+				</table>
+			</div>
     </body>
 </html>

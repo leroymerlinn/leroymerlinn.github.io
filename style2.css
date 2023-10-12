@@ -1,16 +1,13 @@
 /* General styling */
 @font-face {
-    font-family: sfui;
-    src: url("sfui.woff");
-}
-@font-face {
-    font-family: segoeui;
-    src: url(segoeui.woff);
+    font-family: gabarito;
+    src: url("gabarito_variable.woff");
 }
 * {
-    font-family: sfui;
+    font-family: gabarito;
     transition: 0.4s;
 	box-sizing: border-box;
+    cursor: default;
 }
 body {
     background-color: #161616;
@@ -23,7 +20,7 @@ table {
 }
 .copyright {
     color: white;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 .bodydiv {
@@ -31,6 +28,19 @@ table {
 }
 .text-center {
     text-align: center;
+}
+.spaceBetweenTables {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.notVisible {
+    display: none;
+}
+#clock {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 /* Table styling */

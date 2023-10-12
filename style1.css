@@ -1,23 +1,17 @@
 /* General styling */
 @font-face {
-    font-family: sfui;
-    src: url("sfui.woff");
-}
-@font-face {
-    font-family: segoeui;
-    src: url(segoeui.woff);
+    font-family: gabarito;
+    src: url("gabarito_variable.woff");
 }
 * {
-    font-family: sfui;
+    font-family: gabarito;
     transition: 0.4s;
 	box-sizing: border-box;
-}
-table {
-	filter:blur(0px);
+    cursor: default;
 }
 .copyright {
     color: black;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
 .bodydiv {
@@ -26,23 +20,36 @@ table {
 .text-center {
     text-align: center;
 }
+.spaceBetweenTables {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.notVisible {
+    display: none;
+}
+#clock {
+    color: #161616;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
 
 /* Table styling */
+table {
+    font-weight: lighter;
+    width: 100%;
+    filter: blur(0px);
+}
 th {
     background-color: #D0FFAA ;
     color: black;
     text-align: center;
     padding: 20px;
-    border: 0,25px solid black;
 }
 td {
     background-color: white;
     padding: 10px;
-    text-align: center
-}
-table {
-    font-weight: lighter;
-    width: 100%
+    text-align: center;
 }
 
 /* Subjects styling */
@@ -87,29 +94,6 @@ table {
 }
 .recreo{
     background-color: #7AFFDD;
-}
-
-/* Tooltips appearance */
-.iso2 {
-    color: black;
-}
-.lmsi2 {
-    color: black;
-}
-.gbd2 {
-    color: black;
-}
-.fol2 {
-    color: black;
-}
-.par2 {
-    color: black;
-}
-.iasir2 {
-    color: black;
-}
-.fh2 {
-    color: black;
 }
 
 /* Button appearance */
