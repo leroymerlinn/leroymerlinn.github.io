@@ -1,4 +1,4 @@
-/* General styling */
+/* Font */
 @font-face {
     font-family: gabarito;
     src: url("gabarito_variable.woff");
@@ -9,8 +9,10 @@
 	box-sizing: border-box;
     cursor: default;
 }
+
+/* Miscellaneous appearance */
 .copyright {
-    color: black;
+    color: #161616;
     margin-top: 20px;
     text-align: center;
 }
@@ -34,7 +36,7 @@
     font-weight: bold;
 }
 
-/* Table styling */
+/* Table appearance */
 table {
     font-weight: lighter;
     width: 100%;
@@ -42,7 +44,7 @@ table {
 }
 th {
     background-color: #D0FFAA ;
-    color: black;
+    color: #161616;
     text-align: center;
     padding: 20px;
 }
@@ -52,7 +54,7 @@ td {
     text-align: center;
 }
 
-/* Subjects styling */
+/* Subjects appearance */
 .horas{
     background-color: #AABEFF ;
     font-weight: bold;
