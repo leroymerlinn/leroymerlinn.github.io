@@ -56,43 +56,36 @@ td {
 
 /* Subjects appearance */
 .horas{
-    background-color: #AABEFF ;
+    background-color: #AABEFF;
     font-weight: bold;
 }
 .iso{
     background-color: #EBFF8F;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .lmsi{
     background-color: #FFA38F;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .gbd{
     background-color: #F8AAFF;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .fol{
     background-color: #FFDB8F;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .iasir{
     background-color: #B3FF8F;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .par{
     background-color: #ffaac5;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .fh{
     background-color: #fda0a0;
     transition: 0.2s;
-    transition-delay: 0.05s;
 }
 .recreo{
     background-color: #7AFFDD;
@@ -107,17 +100,20 @@ td {
     justify-content: center;
 }
 .button {
-    background: linear-gradient(#15d798, #073763);
-    border-radius: 10px;
+    background: linear-gradient(#65b4fd, #a0d0fd);
+    border-radius: 5px;
     border-style: none;
     padding: 20px 40px;
-    color: #ffffff;
+    color: #161616;
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
     justify-content: center;
-    transition: all .3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
     display: inline-block;
+}
+.button:hover {
+    transform: translateY(-6px);
 }

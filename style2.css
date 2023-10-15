@@ -109,11 +109,11 @@ table {
     justify-content: center;
   }
 .button {
-    background: linear-gradient(#073763, #15d798);
-    border-radius: 10px;
+    background: linear-gradient(#a0d0fd, #65b4fd);
+    border-radius: 5px;
     border-style: none;
     padding: 20px 40px;
-    color: #ffffff;
+    color: #161616;
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
@@ -121,4 +121,7 @@ table {
     transition: all .3s ease-in-out 0s;
     cursor: pointer;
     display: inline-block;
+}
+.button:hover {
+    transform: translateY(-6px);
 }
