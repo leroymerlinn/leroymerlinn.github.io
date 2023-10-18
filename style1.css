@@ -11,10 +11,8 @@
 }
 
 /* Miscellaneous appearance */
-.copyright {
-    color: #161616;
-    margin-top: 20px;
-    text-align: center;
+body {
+    overflow: hidden;
 }
 .bodydiv {
     visibility: visible;
@@ -25,9 +23,8 @@
 .spaceBetweenTables {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.notVisible {
-    display: none;
+    width: 100%;
+    float: right;
 }
 #clock {
     color: #161616;
@@ -35,12 +32,16 @@
     font-size: 32px;
     font-weight: bold;
 }
+h2 {
+    color: #161616;
+}
 
 /* Table appearance */
 table {
     font-weight: lighter;
     width: 100%;
     filter: blur(0px);
+    float: right;
 }
 th {
     background-color: #D0FFAA ;
@@ -61,59 +62,148 @@ td {
 }
 .iso{
     background-color: #EBFF8F;
-    transition: 0.2s;
+    
 }
 .lmsi{
     background-color: #FFA38F;
-    transition: 0.2s;
+    
 }
 .gbd{
     background-color: #F8AAFF;
-    transition: 0.2s;
+    
 }
 .fol{
     background-color: #FFDB8F;
-    transition: 0.2s;
+    
 }
 .iasir{
     background-color: #B3FF8F;
-    transition: 0.2s;
+    
 }
 .par{
     background-color: #ffaac5;
-    transition: 0.2s;
+    
 }
 .fh{
     background-color: #fda0a0;
-    transition: 0.2s;
-}
-.recreo{
-    background-color: #7AFFDD;
+    
+}.recreo{
+    background-color: #BDDFD5;
 }
 
-/* Button appearance */
-.wrap {
-    margin-top: 40px;
-    height: 100%;
-    display: flex;
-    align-items: right;
-    justify-content: center;
+/* Sidebar appearance and settings */
+.sidebar {
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+    bottom: 0;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	overflow-x: hidden;
+	padding-top: 60px;
+    display: none;
 }
-.button {
-    background: linear-gradient(#65b4fd, #a0d0fd);
-    border-radius: 5px;
-    border-style: none;
-    padding: 20px 40px;
+.sidebar li {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	
+}
+li:hover {
     color: #161616;
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    justify-content: center;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    display: inline-block;
 }
-.button:hover {
-    transform: translateY(-6px);
+.li1::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: #161616;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.li1:hover::after {
+    transform: scaleX(0.32);
+    transition: transform 0.4s ease;
+}
+.li2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: #161616;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.li2:hover::after {
+    transform: scaleX(0.37);
+    transition: transform 0.4s ease;
+}
+.li3::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: #161616;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.li3:hover::after {
+    transform: scaleX(0.54);
+    transition: transform 0.4s ease;
+}
+.li4::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: auto;
+    background-color: #161616;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+.li4:hover::after {
+    transform: scaleX(0.6);
+    transition: transform 0.4s ease;
+}
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+    right: 0;
+	font-size: 36px;
+}
+.openbtn {
+	font-size: 30px;
+	cursor: pointer;
+	color: #4b4b4b;
+	padding-left: 40px;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+	float: left;
+}
+.openbtn:hover {
+	color: #161616;
+}
+.closebtn:hover {
+	color: #161616;
+}
+.closebtn {
+	position: absolute;
+	top: 0;
+	margin-right: 15px;
+	font-size: 40px;
+	background-color: transparent;
+	cursor: pointer;
+}
+ul {
+	list-style-type: none;
+}
+li {
+    cursor: pointer;
 }

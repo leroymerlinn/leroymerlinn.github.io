@@ -8,10 +8,26 @@
 		<script src="script.js" type="text/javascript"></script>
     </head>
     <body>
-		<div class="bodydiv" onmouseover="unblurAll()">
+		<div class="bodydiv">
+			<button class="openbtn" onclick="openNav()" id="button">&#9776;</button>
         	<h1 class="text-center">HORARIO 1ºASIR; CURSO 2023/24</h1>
+			<div id="main">
+				<ul id="mySidebar" class="sidebar">
+					<li class="closebtn" onclick="closeNav()">&#215;</li>
+					<li class=""><h2 style="margin-bottom: 10px;">Options</h2></li>
+					<li class="li1" onclick="palette1()">Palette 1</li>
+					<li class="li1" onclick="palette2()">Palette 2</li>
+					<li class="li1" onclick="palette3()">Palette 3</li>
+					<li class="li1" onclick="palette4()">Palette 4</li>
+					<li class="li1" onclick="palette5()">Palette 5</li>
+					<li class="li1" onclick="palette6()">Palette 6</li>
+					<li class="li2" onclick="noPalette()">No styling</li>
+					<li class="li3" onclick="defaultPalette()">Default palette</li>
+					<li class="li4" onclick="toggleMode()">Light/dark mode</li>
+				</ul>			
+			</div>
 		</div>
-		<table>
+		<table id="table">
 			<tr>
 				<th>PERIODOS</th>
 				<th>LUNES</th>
@@ -88,11 +104,11 @@
 				<td class="horas">20:20</td>
 			</tr>
 		</table>
-		<div class="bodydiv" onmouseover="unblurAll()">
-			<div id="clock" class="spaceBetweenTables">
+		<div class="bodydiv">
+			<div id="clock" class="spaceBetweenTables" id="middleDiv">
 				<div id="clock" onload="clock()"></div>
 			</div>
-			<table>
+			<table id="table2">
 				<tr>
 					<th>MÓDULO</th>
 					<th>PROFESOR</th>
@@ -126,12 +142,8 @@
 					<td class="par parT">Jose Víctor Córdoba Martínez</td>
 				</tr>
 			</table>
-			<div class="wrap">
-				<button class="button" onclick="toggleMode()">Switch mode</button>
-			</div>
-        	<p class="copyright">&#169; Javier Rodríguez Parra</p>
 		</div>
-			<div class="notVisible">
+			<div style="display: none;">
 				<table>
 					<tr>
 						<th>PERIODOS</th>

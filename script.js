@@ -101,6 +101,48 @@ function clock() {
     {if (i<10) {i="0" + i;}return i;}
     window.onload=function(){clock();
 }
+function openNav() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("mySidebar").style.width = "20%";
+    document.getElementById("button").style.marginLeft = "20%";
+    document.getElementById("table").style.width = "80%";
+    document.getElementById("table2").style.width = "80%";
+    document.getElementById("buttonDiv").style.width = "80%";
+    document.getElementById("middleDiv").style.width = "80%";
+}
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("mySidebar").style.width = "0%";
+    document.getElementById("button").style.marginLeft= "0";
+    document.getElementById("table").style.width = "100%";
+    document.getElementById("table2").style.width = "100%";
+    document.getElementById("buttonDiv").style.width = "100%";
+    document.getElementById("middleDiv").style.width = "100%";
+}
+function palette1() {
+    theme.href = "style3.css";
+}
+function palette2() {
+    theme.href = "style4.css";
+}
+function palette3() {
+    theme.href = "style5.css";
+}
+function palette4() {
+    theme.href = "style6.css";
+}
+function palette5() {
+    theme.href = "style7.css";
+}
+function palette6() {
+    theme.href = "style8.css";
+}
+function noPalette() {
+    theme.href = "";
+}
+function defaultPalette() {
+    theme.href = "style1.css";
+}
 function toggleMode() {
     if (theme.getAttribute("href") == "style1.css") {
         theme.href = "style2.css";
