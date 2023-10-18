@@ -1,33 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Horario 2023/2024</title>
+        <title>HORARIO</title>
 		<link rel="shortcut icon" href="webIcon.ico">
-		<link rel="stylesheet" type="text/css" href="style1.css" id="css">
         <meta charset="UTF-8">
-		<script src="script.js" type="text/javascript"></script>
+		<style>
+			@font-face {
+				font-family: gabarito;
+				src: url(gabarito_variable.woff);
+			}
+			body {
+				font-family: gabarito;
+			}
+			h1 {
+				text-align: center;
+				color: #161616;
+			}
+			table, td, th {
+				border: 4px solid white;
+				border-collapse: collapse;
+			}
+			th {
+				background-color: #D0FFAA ;
+				color: #161616;
+				padding: 20px;
+			}
+			td {
+				padding: 10px;
+				text-align: center;
+			}
+			.horas{
+    			background-color: #AABEFF;
+			}
+			.iso{
+   				background-color: #EBFF8F;
+			}
+			.lmsgi{
+    			background-color: #FFA38F;
+			}
+			.gbd{
+    			background-color: #F8AAFF;
+			}
+			.fol{
+    			background-color: #FFDB8F;   
+			}
+			.iasir{
+    			background-color: #B3FF8F;    
+			}
+			.par{
+    			background-color: #ffaac5;   
+			}
+			.fh{
+   				background-color: #fda0a0;   
+			}
+			.recreo{
+    			background-color: #BDDFD5;
+			}
+			.spaceBetweenTables {
+    			margin-top: 20px;
+    			margin-bottom: 20px;
+    			width: 100%;
+			}			
+		</style>
+		<script>
+			function clock() {
+				today=new Date();
+				h=today.getHours();
+				m=today.getMinutes();
+				m=checkTime(m);
+				document.getElementById('clock').innerHTML=h+":"+m+"";
+				t=setTimeout('clock()',0);}
+				function checkTime(i)
+				{if (i<10) {i="0" + i;}return i;}
+				window.onload=function(){clock();
+			}			
+		</script>
     </head>
     <body>
-		<div class="bodydiv">
-			<button class="openbtn" onclick="openNav()" id="button">&#9776;</button>
-        	<h1 class="text-center">HORARIO 1ºASIR; CURSO 2023/24</h1>
-			<div id="main">
-				<ul id="mySidebar" class="sidebar">
-					<li class="closebtn" onclick="closeNav()">&#215;</li>
-					<li class=""><h2 style="margin-bottom: 10px;">Options</h2></li>
-					<li class="li1" onclick="palette1()">Palette 1</li>
-					<li class="li1" onclick="palette2()">Palette 2</li>
-					<li class="li1" onclick="palette3()">Palette 3</li>
-					<li class="li1" onclick="palette4()">Palette 4</li>
-					<li class="li1" onclick="palette5()">Palette 5</li>
-					<li class="li1" onclick="palette6()">Palette 6</li>
-					<li class="li2" onclick="noPalette()">No styling</li>
-					<li class="li3" onclick="defaultPalette()">Default palette</li>
-					<li class="li4" onclick="toggleMode()">Light/dark mode</li>
-				</ul>			
-			</div>
-		</div>
-		<table id="table">
+		<h1>Horario 1ºASIR 2023/2024</h1>
+		<table>
 			<tr>
 				<th>PERIODOS</th>
 				<th>LUNES</th>
@@ -37,190 +88,78 @@
 				<th>VIERNES</th>
 			</tr>
 			<tr>
-				<td class="horas">15:30</td>
-				<td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()" onmouseout="unblurAll()">
-					<div>Implantación de sistemas operativos</div>
-				</td>
-				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()" onmouseout="unblurAll()">
-					<div>Gestión de bases de datos</div>
-				</td>
-				<td rowspan="2" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" onmouseout="unblurAll()">
-					<div>Lenguajes de marca y sistemas de gestión de información</div>
-				</td>
-				<td rowspan="3" class="iasir iasirpop" onmouseover="blurAllbutIASIR()" onmouseout="unblurAll()">
-					<div>Inglés técnico para administración <br> de sistemas informáticos en red</div>
-				</td>
-				<td rowspan="3" class="fh fhpop" onmouseover="blurAllbutFH()" onmouseout="unblurAll()">
-					<div>Fundamentos de hardware</div>
-				</td>
+				<th class="horas">15:30</th>
+				<td rowspan="2" class="iso">Implantación de sistemas operativos</td>
+				<td rowspan="3" class="gbd">Gestión de bases de datos</td>
+				<td rowspan="2" class="lmsgi">Lenguajes de marca y sistemas de gestión de información</td>
+				<td rowspan="3" class="iasir">Inglés técnico para administración <br> de sistemas informáticos en red</td>
+				<td rowspan="3" class="fh">Fundamentos de hardware</td>
 			</tr>
 			<tr>
-				<td class="horas">16:25</td>
+				<th class="horas">16:25</th>
 			</tr>
 			<tr>
-				<td class="horas">17:20</td>
-				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" onmouseout="unblurAll()">
-					<div>Lenguajes de marca y sistemas de gestión de información</div>
-				</td>
-                <td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" onmouseout="unblurAll()">
-                    <div>Formación y orientación laboral</div>
-                </td>
+				<th class="horas">17:20</th>
+				<td rowspan="1" class="lmsgi">Lenguajes de marca y sistemas de gestión de información</td>
+                <td rowspan="1" class="fol">Formación y orientación laboral</td>
 			</tr>
 			<tr>
-				<td class="horas">18:15</td>
+				<th class="horas">18:15</th>
 				<td colspan="5" class="recreo">Recreo</td>
 			</tr>
 			<tr>
-				<td class="horas">18:30</td>
-				<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()" onmouseout="unblurAll()">
-					<div>Lenguajes de marca y sistemas de gestión de información</div>
-				</td>
-				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" onmouseout="unblurAll()">
-					<div>Formación y orientación laboral</div>
-				</td>
-                <td rowspan="3" class="par parpop" onmouseover="blurAllbutPAR()" onmouseout="unblurAll()">
-                    <div>Planificación y administración de redes</div>
-                </td>
-				<td rowspan="3" class="iso isopop" onmouseover="blurAllbutISO()" onmouseout="unblurAll()">
-					<div>Implantación de sistemas operativos</div>
-				</td>
-				<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()" onmouseout="unblurAll()">
-					<div>Formación y orientación laboral</div>
-				</td>
+				<th class="horas">18:30</th>
+				<td rowspan="1" class="lmsgi">Lenguajes de marca y sistemas de gestión de información</td>
+				<td rowspan="1" class="fol">Formación y orientación laboral</td>
+                <td rowspan="3" class="par">Planificación y administración de redes</td>
+				<td rowspan="3" class="iso">Implantación de sistemas operativos</td>
+				<td rowspan="1" class="fol">Formación y orientación laboral</td>
 			</tr>
 			<tr>
-				<td class="horas">19:25</td>
-				<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()" onmouseout="unblurAll()">
-					<div>Gestión de bases de datos</div>
-				</td>
-                <td rowspan="2" class="par parpop" onmouseover="blurAllbutPAR()" onmouseout="unblurAll()">
-                    <div>Planificación y administración de redes</div>
-                </td>
-                <td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()" onmouseout="unblurAll()">
-                    <div>Implantación de sistemas operativos</div>
-                </td>
+				<th class="horas">19:25</th>
+				<td rowspan="3" class="gbd">Gestión de bases de datos</td>
+                <td rowspan="2" class="par">Planificación y administración de redes</td>
+                <td rowspan="2" class="iso">Implantación de sistemas operativos</td>
 			</tr>
 			<tr>
-				<td class="horas">20:20</td>
+				<th class="horas">20:20</th>
 			</tr>
 		</table>
-		<div class="bodydiv">
-			<div id="clock" class="spaceBetweenTables" id="middleDiv">
-				<div id="clock" onload="clock()"></div>
-			</div>
-			<table id="table2">
-				<tr>
-					<th>MÓDULO</th>
-					<th>PROFESOR</th>
-				</tr>
-				<tr>
-					<td class="fh fhT">Fundamentos de hardware</td>
-					<td class="fh fhT">Israel Aguilar Sánchez</td>
-				</tr>
-				<tr>
-					<td class="fol folT">Formación y orientación laboral</td>
-					<td class="fol folT">Gloria González Marín</td>
-				</tr>
-				<tr>
-					<td class="gbd gbdT">Gestión de bases de datos</td>
-					<td class="gbd gbdT">Alberto Pérez Vela</td>
-				</tr>
-				<tr>
-					<td class="iasir iasirT">Inglés técnico para administración de sistemas informáticos en red</td>
-					<td class="iasir iasirT">Manuel Cano Hernández</td>
-				</tr>
-				<tr>
-					<td class="iso isoT">Implantación de sistemas operativos</td>
-					<td class="iso isoT">Israel Aguilar Sánchez</td>
-				</tr>
-				<tr>
-					<td class="lmsi lmsiT">Lenguajes de marca y sistemas de gestión de información</td>
-					<td class="lmsi lmsiT">Beatriz de Miguel Ramírez</td>
-				</tr>
-				<tr>
-					<td class="par parT">Planificación y administración de redes</td>
-					<td class="par parT">Jose Víctor Córdoba Martínez</td>
-				</tr>
-			</table>
-		</div>
-			<div style="display: none;">
-				<table>
-					<tr>
-						<th>PERIODOS</th>
-						<th>LUNES</th>
-						<th>MARTES</th>
-						<th>MIÉRCOLES</th>
-						<th>JUEVES</th>
-						<th>VIERNES</th>
-					</tr>
-					<tr>
-						<td class="horas">15:30</td>
-						<td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()">
-							<div>Implantación de sistemas operativos</div>
-						</td>
-						<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()">
-							<div>Gestión de bases de datos</div>
-						</td>
-						<td rowspan="2" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
-							<div>Lenguajes de marca y sistemas de gestión de información</div>
-						</td>
-						<td rowspan="3" class="iasir iasirpop" onmouseover="blurAllbutIASIR()">
-							<div>Inglés técnico para administración <br> de sistemas informáticos en red</div>
-						</td>
-						<td rowspan="3" class="fh fhpop" onmouseover="blurAllbutFH()">
-							<div>Fundamentos de hardware</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="horas">16:25</td>
-					</tr>
-					<tr>
-						<td class="horas">17:20</td>
-						<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
-							<div>Lenguajes de marca y sistemas de gestión de información</div>
-						</td>
-						<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
-							<div>Formación y orientación laboral</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="horas">18:15</td>
-						<td colspan="5" class="recreo">Recreo</td>
-					</tr>
-					<tr>
-						<td class="horas">18:30</td>
-						<td rowspan="1" class="lmsi lmsipop" onmouseover="blurAllbutLMSI()">
-							<div>Lenguajes de marca y sistemas de gestión de información</div>
-						</td>
-						<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
-							<div>Formación y orientación laboral</div>
-						</td>
-						<td rowspan="3" class="par parpop" onmouseover="blurAllbutPAR()">
-							<div>Planificación y administración de redes</div>
-						</td>
-						<td rowspan="3" class="iso isopop" onmouseover="blurAllbutISO()">
-							<div>Implantación de sistemas operativos</div>
-						</td>
-						<td rowspan="1" class="fol folpop" onmouseover="blurAllbutFOL()">
-							<div>Formación y orientación laboral</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="horas">19:25</td>
-						<td rowspan="3" class="gbd gbdpop" onmouseover="blurAllbutGBD()">
-							<div>Gestión de bases de datos</div>
-						</td>
-						<td rowspan="2" class="par parpop" onmouseover="blurAllbutPAR()">
-							<div>Planificación y administración de redes</div>
-						</td>
-						<td rowspan="2" class="iso isopop" onmouseover="blurAllbutISO()">
-							<div>Implantación de sistemas operativos</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="horas">20:20</td>
-					</tr>
-				</table>
-			</div>
+		<div id="clock" class="spaceBetweenTables">
+			<div id="clock" onload="clock()"></div>
+		<table>
+			<tr>
+				<th>MÓDULO</th>
+				<th>PROFESOR</th>
+			</tr>
+			<tr>
+				<td class="fh">Fundamentos de hardware</td>
+				<td class="fh">Israel Aguilar Sánchez</td>
+			</tr>
+			<tr>
+				<td class="fol">Formación y orientación laboral</td>
+				<td class="fol">Gloria González Marín</td>
+			</tr>
+			<tr>
+				<td class="gbd">Gestión de bases de datos</td>
+				<td class="gbd">Alberto Pérez Vela</td>
+			</tr>
+			<tr>
+				<td class="iasir">Inglés técnico para administración de sistemas informáticos en red</td>
+				<td class="iasir">Manuel Cano Hernández</td>
+			</tr>
+			<tr>
+				<td class="iso">Implantación de sistemas operativos</td>
+				<td class="iso">Israel Aguilar Sánchez</td>
+			</tr>
+			<tr>
+				<td class="lmsi">Lenguajes de marca y sistemas de gestión de información</td>
+				<td class="lmsi">Beatriz de Miguel Ramírez</td>
+			</tr>
+			<tr>
+				<td class="par">Planificación y administración de redes</td>
+				<td class="par">Jose Víctor Córdoba Martínez</td>
+			</tr>
+		</table>
     </body>
 </html>
