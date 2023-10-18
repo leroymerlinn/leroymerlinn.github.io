@@ -29,6 +29,9 @@
 				padding: 10px;
 				text-align: center;
 			}
+			table {
+				width: 100%;
+			}
 			.horas{
     			background-color: #AABEFF;
 			}
@@ -60,7 +63,13 @@
     			margin-top: 20px;
     			margin-bottom: 20px;
     			width: 100%;
-			}			
+			}
+			#clock {
+    			color: #161616;
+    			text-align: center;
+    			font-size: 32px;
+    			font-weight: bold;
+			}		
 		</style>
 		<script>
 			function clock() {
@@ -127,6 +136,7 @@
 		</table>
 		<div id="clock" class="spaceBetweenTables">
 			<div id="clock" onload="clock()"></div>
+		</div>
 		<table>
 			<tr>
 				<th>MÓDULO</th>
