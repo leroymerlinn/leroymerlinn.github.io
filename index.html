@@ -3,12 +3,18 @@
     <head>
         <title>HORARIO</title>
 		<link rel="shortcut icon" href="webIcon.ico">
-        <meta charset="UTF-8">
 		<link rel="stylesheet" href="style1.css" type="text/css" id="css">
 		<script src="script.js" type="text/javascript"></script>
+		<!-- METADATA -->
+        <meta charset="UTF-8">
+		<meta name="keywords" content="1ºASIR, Horario, 2023/2024">
+		<meta name="description" content="Horario de 1ºASIR 2023/2024">
+		<meta name="author" content="Javier Rodríguez Parra">
+		<meta viewport="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="retrieveCSS();buttonName()">
 		<h1>Horario 1ºASIR 2023/2024</h1>
+		<!-- Timetable -->
 		<table>
 			<tr>
 				<th>PERIODOS</th>
@@ -56,9 +62,11 @@
 				<th class="horas">20:20</th>
 			</tr>
 		</table>
+		<!-- Clock -->
 		<div id="clock" class="spaceBetweenTables">
 			<div id="clock" onload="clock()"></div>
 		</div>
+		<!-- Teachers table -->
 		<table>
 			<tr>
 				<th>MÓDULO</th>
@@ -69,6 +77,14 @@
 				<td class="fh">Israel Aguilar Sánchez</td>
 			</tr>
 			<tr>
+				<td class="par">Planificación y administración de redes</td>
+				<td class="par">Jose Víctor Córdoba Martínez</td>
+			</tr>
+			<tr>
+				<td class="iasir">Inglés técnico para administración de sistemas informáticos en red</td>
+				<td class="iasir">Manuel Cano Hernández</td>
+			</tr>
+			<tr>
 				<td class="fol">Formación y orientación laboral</td>
 				<td class="fol">Gloria González Marín</td>
 			</tr>
@@ -77,21 +93,16 @@
 				<td class="gbd">Alberto Pérez Vela</td>
 			</tr>
 			<tr>
-				<td class="iasir">Inglés técnico para administración de sistemas informáticos en red</td>
-				<td class="iasir">Manuel Cano Hernández</td>
+				<td class="lmsgi">Lenguajes de marca y sistemas de gestión de información</td>
+				<td class="lmsgi">Beatriz de Miguel Ramírez</td>
 			</tr>
 			<tr>
 				<td class="iso">Implantación de sistemas operativos</td>
 				<td class="iso">Israel Aguilar Sánchez</td>
 			</tr>
-			<tr>
-				<td class="lmsgi">Lenguajes de marca y sistemas de gestión de información</td>
-				<td class="lmsgi">Beatriz de Miguel Ramírez</td>
-			</tr>
-			<tr>
-				<td class="par">Planificación y administración de redes</td>
-				<td class="par">Jose Víctor Córdoba Martínez</td>
-			</tr>
 		</table>
+		<div class="wrap">
+			<button class="button" onclick="toggleUIMode();storeCSS()" id="button"></button>
+		</div>
     </body>
 </html>
