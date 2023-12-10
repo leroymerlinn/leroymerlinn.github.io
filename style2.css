@@ -2,9 +2,6 @@
     font-family: gabarito;
     src: url(gabarito_variable.woff);
 }
-* {
-    transition: 0.4s;
-}
 body {
     font-family: gabarito;
     background-color: #161616;
