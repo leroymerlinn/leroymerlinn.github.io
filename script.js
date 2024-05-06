@@ -12,7 +12,7 @@ let theme = document.getElementById("css");
 let d = new Date();
 let h = d.getHours();
 let m = d.getMinutes();
-if (h >= 18 && m >= 8 || h <= 7 && m <= 30) {
+if (h >= 20 && m >= 20 || h <= 7 && m <= 45) {
     theme.href = "style2.css";
 } else {
     theme.href = "style1.css";
